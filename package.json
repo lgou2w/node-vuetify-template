@@ -1,8 +1,8 @@
 {
-  "name": "node-vue-template",
+  "name": "node-vuetify-template",
   "version": "0.0.1",
-  "description": "A frontend template for vue development",
-  "repository": "https://github.com/lgou2w/node-vue-template.git",
+  "description": "A frontend template for vue and vuetify development",
+  "repository": "https://github.com/lgou2w/node-vuetify-template.git",
   "author": "lgou2w <lgou2w@hotmail.com>",
   "license": "Apache-2.0",
   "private": true,
@@ -21,10 +21,12 @@
     "vue-i18n": "^8.15.3",
     "vue-property-decorator": "^8.3.0",
     "vue-router": "^3.1.3",
+    "vuetify": "^2.2.1",
     "vuex": "^3.1.2",
     "vuex-class": "^0.3.2"
   },
   "devDependencies": {
+    "@mdi/font": "^4.7.95",
     "@types/axios": "^0.14.0",
     "@types/nprogress": "^0.2.0",
     "@vue/cli-plugin-babel": "^4.1.2",
@@ -43,7 +45,9 @@
     "sass-loader": "^8.0.0",
     "sass-resources-loader": "^2.0.1",
     "typescript": "~3.5.3",
+    "vue-cli-plugin-vuetify": "^1.1.2",
     "vue-loader": "^15.8.3",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "vuetify-loader": "^1.4.3"
   }
 }

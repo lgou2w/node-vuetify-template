@@ -1,13 +1,19 @@
 <template lang="pug">
-  .container
-    p {{ text }}
-    input(v-model="text")
-    p Long DateTime: {{ $d(new Date(), 'long') }}
-    p Short DateTime: {{ $d(new Date()) }}
-    p Vuex localeStore counter: {{ counter }}
-    button(@click.stop="counter++") Increment
-    button(@click.stop="counter--") decrement
-    button(@click.stop="delCounter") Delete
+  v-app(light)
+    v-app-bar(app dark color="primary")
+      v-toolbar-title Node Vuetify Template
+      v-btn(icon @click.stop="goGitHub")
+        v-icon mdi-github-circle
+    v-content
+      v-container(fluid)
+        p {{ text }}
+        v-text-field(v-model="text" label="Input text:")
+        p Long DateTime: {{ $d(new Date(), 'long') }}
+        p Short DateTime: {{ $d(new Date()) }}
+        p Vuex localeStore counter: {{ counter }}
+        v-btn(@click.stop="counter++" color="primary") Increment
+        v-btn(@click.stop="counter--" color="primary").mx-2 decrement
+        v-btn(@click.stop="delCounter" color="error") Delete
 </template>
 
 <script lang="ts">
@@ -15,6 +21,7 @@ import { Component, Vue } from 'vue-property-decorator'
 import { namespace } from 'vuex-class'
 import { State } from '@/store/modules/global'
 import * as types from '@/store/mutation-types'
+import { repository } from '@/../package.json'
 
 const globalModule = namespace('global')
 
@@ -28,5 +35,9 @@ export default class Index extends Vue {
 
   get counter (): number { return this._counter }
   set counter (val: number) { this.setCounter(val) }
+
+  goGitHub () {
+    window.open(repository, '_blank')
+  }
 }
 </script>
