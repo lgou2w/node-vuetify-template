@@ -1,6 +1,6 @@
-# Node Vue Template
+# Node Vuetify Template
 
-A frontend template for vue development 
+A frontend template for vue and vuetify development 
 
 * Information
     * Vue 2 with CLI
@@ -12,8 +12,10 @@ A frontend template for vue development
 
 * Default dependencies
     * Vue 2
+    * Vuetify 2
     * Vue-Router
     * Vuex
     * VueI18n
     * Axios
     * nprogress
+    * Material Design Icon (@mdi/font)
