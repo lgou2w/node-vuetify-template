@@ -10,9 +10,9 @@
         v-text-field(v-model="text" label="Input text:")
         p Long DateTime: {{ $d(new Date(), 'long') }}
         p Short DateTime: {{ $d(new Date()) }}
-        p Vuex localeStore counter: {{ counter }}
+        p Vuex localStorage counter: {{ counter }}
         v-btn(@click.stop="counter++" color="primary") Increment
-        v-btn(@click.stop="counter--" color="primary").mx-2 decrement
+        v-btn(@click.stop="counter--" color="primary").mx-2 Decrement
         v-btn(@click.stop="delCounter" color="error") Delete
 </template>
 
