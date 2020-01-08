@@ -9,8 +9,8 @@ import plugins from './plugins'
 import pkg from '../package.json'
 
 import '@/styles/global.scss'
-import 'vuetify/dist/vuetify.min.css'
-import '@mdi/font/css/materialdesignicons.min.css'
+import 'vuetify/dist/vuetify.min.css' // See: public/index.html
+import '@mdi/font/css/materialdesignicons.min.css' // See: public/index.html
 
 Vue.config.productionTip = false
 Vue.prototype.$api = api
