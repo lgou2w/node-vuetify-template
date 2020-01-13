@@ -9,8 +9,11 @@ import plugins from './plugins'
 import pkg from '../package.json'
 
 import '@/styles/global.scss'
-import 'vuetify/dist/vuetify.min.css' // See: public/index.html
-import '@mdi/font/css/materialdesignicons.min.css' // See: public/index.html
+
+if (process.env.NODE_ENV !== 'production' || process.env.VUE_APP_EXTERNAL_CDN !== 'true') {
+  require('vuetify/dist/vuetify.min.css')
+  require('@mdi/font/css/materialdesignicons.min.css')
+}
 
 Vue.config.productionTip = false
 Vue.prototype.$api = api
@@ -30,7 +33,7 @@ const app = new Vue({
 
 plugins.install(app, router, store)
 
-console.log(
+console.info(
   `%c ${pkg.name} %c v${pkg.version} %c Made with Vue.js and %c❤%c by ${pkg.author}.%c`,
   'color:#fff;background:linear-gradient(50deg,#965ed6 0,#bb00ff 100%);padding:5px 0;margin10px 0;',
   'background:#fadfa3;padding:5px 0;',

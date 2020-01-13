@@ -25,7 +25,9 @@ import { repository } from '@/../package.json'
 
 const globalModule = namespace('global')
 
-@Component
+@Component({
+  name: 'index'
+})
 export default class Index extends Vue {
   text: string | null = 'HelloWorld!'
 
