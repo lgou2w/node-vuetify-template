@@ -8,7 +8,7 @@ import locale from './locale'
 import plugins from './plugins'
 import pkg from '../package.json'
 
-import '@/styles/global.scss'
+import '@/styles/global.sass'
 
 if (process.env.NODE_ENV !== 'production' || process.env.VUE_APP_EXTERNAL_CDN !== 'true') {
   require('vuetify/dist/vuetify.min.css')
