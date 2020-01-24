@@ -5,17 +5,17 @@ const cdn = {
   // Customize your external cdn library service
   js: [
     '//cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.min.js',
-    '//cdn.jsdelivr.net/npm/vue-router@3.1.3/dist/vue-router.min.js',
+    '//cdn.jsdelivr.net/npm/vue-router@3.1.5/dist/vue-router.min.js',
     '//cdn.jsdelivr.net/npm/vuex@3.1.2/dist/vuex.min.js',
     '//cdn.jsdelivr.net/npm/vue-i18n@8.15.3/dist/vue-i18n.min.js',
-    '//cdn.jsdelivr.net/npm/vuetify@2.2.3/dist/vuetify.min.js',
-    '//cdn.jsdelivr.net/npm/axios@0.19.1/dist/axios.min.js',
+    '//cdn.jsdelivr.net/npm/vuetify@2.2.6/dist/vuetify.min.js',
+    '//cdn.jsdelivr.net/npm/axios@0.19.2/dist/axios.min.js',
     '//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js'
   ],
   css: [
     '//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css',
-    '//cdn.jsdelivr.net/npm/@mdi/font@4.7.95/css/materialdesignicons.min.css',
-    '//cdn.jsdelivr.net/npm/vuetify@2.2.3/dist/vuetify.min.css'
+    '//cdn.jsdelivr.net/npm/@mdi/font@4.8.95/css/materialdesignicons.min.css',
+    '//cdn.jsdelivr.net/npm/vuetify@2.2.6/dist/vuetify.min.css'
   ]
 }
 
